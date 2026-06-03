@@ -1,3 +1,5 @@
+import '../SearchBox/SearchBox.css';
+
 interface Props {
   onSearch: (value: string) => void;
 }

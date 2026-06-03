@@ -1,3 +1,5 @@
+import '../Pagination/Pagination.css';
+
 interface Props {
   pageCount: number;
   currentPage: number;
