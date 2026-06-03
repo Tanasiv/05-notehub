@@ -52,5 +52,3 @@ export const deleteNote = async (id: string): Promise<Note> => {
   const { data } = await api.delete<Note>(`/notes/${id}`);
   return data;
 };
-
-console.log('TOKEN:', import.meta.env.VITE_NOTEHUB_TOKEN);

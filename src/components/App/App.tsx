@@ -37,7 +37,11 @@ export default function App() {
         <SearchBox onSearch={debouncedSearch} />
 
         {totalPages > 1 && (
-          <Pagination pageCount={totalPages} onPageChange={setPage} />
+         <Pagination
+  pageCount={totalPages}
+  currentPage={page}
+  onPageChange={setPage}
+/>
         )}
 
         <button className={styles.button} onClick={() => setIsOpen(true)}>
