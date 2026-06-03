@@ -1,4 +1,4 @@
-import '../NoteForm/NoteForm.css';
+import '../NoteForm/NoteForm.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
@@ -48,7 +48,7 @@ export default function NoteForm({ onClose }: NoteFormProps) {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        mutation.mutate(values);
+        mutation.mutate(values); 
         actions.resetForm();
       }}
     >

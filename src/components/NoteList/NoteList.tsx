@@ -1,4 +1,4 @@
-import '../NoteList/NoteList.css';
+import '../NoteList/NoteList.module.css';
 import type { Note } from '../../types/note';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { deleteNote } from '../../services/noteService';
